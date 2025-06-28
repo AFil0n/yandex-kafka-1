@@ -8,8 +8,16 @@
 		<version>3.5.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>ru.yandex</groupId>
+
+	<modules>
+		<module>producer</module>
+		<module>batch-message-consumer</module>
+		<module>single-message-consumer</module>
+	</modules>
+
+	<groupId>ru.practicum</groupId>
 	<artifactId>kafka-lesson-1</artifactId>
+	<packaging>pom</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>kafka-lesson-1</name>
 	<description>Kafka lesson 1</description>
@@ -41,12 +49,6 @@
 		<dependency>
 			<groupId>org.springframework.kafka</groupId>
 			<artifactId>spring-kafka</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
